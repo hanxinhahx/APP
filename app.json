@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/addCgi/addCgi",
+    "pages/destination/destination",
+    "pages/find/find",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cd853f",
+    "navigationBarTitleText": "旅行呱",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#5fca9c",
+    "backgroundColor": "white",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/indexselect.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "/images/find.png",
+        "selectedIconPath": "/images/findselect.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "景区介绍",
+        "iconPath": "/images/js.png",
+        "selectedIconPath": "/images/jsselect.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/userselect.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

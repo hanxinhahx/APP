@@ -1,0 +1,27 @@
+<!--pages/me/me.wxml-->
+<view class='container'>
+  <view class='userInfo'>
+    <image src='{{userImg}}'/>
+    <text>{{userName}}</text>
+  </view>
+
+  <view class='normalBar' bindtap='chooseImg'>
+    <text>选择、预览图片测试</text><text>></text>
+  </view>
+  <view class='imgList'>
+    <view class='imgBox' wx:for="{{uploadImgList}}" wx:key="{{item}}">
+      <image data-img='{{item}}' catchtap='previewImg' src="{{item}}"/>
+      <icon type="clear" size="20" color="#f76260" catchtap='deleteImg' data-img='{{item}}'/>
+    </view>
+  </view>
+
+  <view class='normalBar'>
+    <text>
+    </text>分享<text>></text>
+  </view>
+  
+
+  <view class='welcome'>
+    <text>欢迎来到孔庙</text>
+  </view>
+</view>

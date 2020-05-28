@@ -5,46 +5,44 @@ Page({
    * 页面的初始数据
    */
   data: {
-    findBtn:[
+    findBtn: [
       {
-        icon:'https://gw.alicdn.com/tfs/TB1XhMFbwoQMeJjy0FoXXcShVXa-48-48.png_48x48q50.jpg_.webp',
-        text:'笔记'
+        icon: 'https://gw.alicdn.com/tfs/TB1XhMFbwoQMeJjy0FoXXcShVXa-48-48.png_48x48q50.jpg_.webp',
+        text: '笔记'
       }, {
         icon: 'https://gw.alicdn.com/tfs/TB13HEsbrsTMeJjSszhXXcGCFXa-48-48.png_48x48q50.jpg_.webp',
         text: '头条'
       }, {
         icon: 'https://gw.alicdn.com/tfs/TB1AcoBbEgQMeJjy0FgXXc5dXXa-48-48.png_48x48q50.jpg_.webp',
         text: '游记'
-      }, {
-        icon: 'https://gw.alicdn.com/tfs/TB1_xIFbwoQMeJjy0FoXXcShVXa-48-48.png_48x48q50.jpg_.webp',
-        text: '买家秀'
-      }
+      },
     ],
-    bannerList:[
-      { img:'https://gw.alicdn.com/tfs/TB16PvKf26H8KJjy0FjXXaXepXa-750-180.jpg_760x760q75.jpg_.webp'
+    bannerList: [
+      {
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590428821641&di=3a40fd5401a1e9e3eb2b42c45ec91910&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2F10030c0000006pa0mC8B0.jpg'
       }, {
-        img: 'https://gw.alicdn.com/tfs/TB15IBqoLDH8KJjy1XcXXcpdXXa-750-234.png_760x760q75.jpg_.webp'
+        img: 'http://youimg1.c-ctrip.com/target/tg/673/574/078/1353ea8d431540ddb462c80795ffc6fe.jpg'
       }, {
-        img: 'https://gw.alicdn.com/tfs/TB1ROktnBTH8KJjy0FiXXcRsXXa-750-234.jpg_760x760q75.jpg_.webp'
-      },  {
-        img: 'https://gw.alicdn.com/tfs/TB1_C6upcLJ8KJjy0FnXXcFDpXa-750-234.jpg_760x760q75.jpg_.webp'
-    }],
-    feedList:[],
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590502424410&di=7b38a9773f3b8b088068c5d7727d1114&imgtype=0&src=http%3A%2F%2Fold.cppfoto.com%2Fworks%2F2015%2F171%2F14922%2F0%2F01710014922-15113011415890_o.jpg'
+      }, {
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590502663268&di=5a66b1b63a0529f0eab9541964afcabd&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ffd%2Ftg%2Fg5%2FM02%2FD4%2FAE%2FCggYr1bhQWiAUWiTAAPdlNzS4X0844.jpg'
+      }],
+    feedList: [],
     loadTimes: 0,
     perLoad: 4,
-    dataList:[
+    dataList: [
       {
-        userImg:'https://m.tuniucdn.com/filebroker/cdn/snc/e0/42/e0424052abef7fbcb73359c9279fb849_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
-        userName:'吴秋煌',
-        content:'此篇游记是“吴秋煌”在途牛发表的游记攻略，记录了在“肇庆”旅游时的游记攻略，图片多多，真实好玩。',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/51/9E/Cii-s1pxQaSIFogLAAWHUQgwZU8AAC-RgG2fr4ABYdp67_w800_h0_c0_t0.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/51/9E/Cii-s1pxQaSIFogLAAWHUQgwZU8AAC-RgG2fr4ABYdp67_w800_h0_c0_t0.jpeg'],
-        company:'游在肇庆'
+        userImg: 'https://m.tuniucdn.com/filebroker/cdn/snc/e0/42/e0424052abef7fbcb73359c9279fb849_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '奥特曼打怪兽',
+        content: '浮浮化荆榛，孔庙存威仪。',
+        imgList: ['http://5b0988e595225.cdn.sohucs.com/images/20190212/d1a814735fee4c1aa3f9fd8aeac092ec.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/51/9E/Cii-s1pxQaSIFogLAAWHUQgwZU8AAC-RgG2fr4ABYdp67_w800_h0_c0_t0.jpeg'],
+        company: '游在衢州'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/4E/5B/Cii-s1pujnaIBBAuABeZh8xcHEYAAC58wD1ASAAF5mf376_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
-        userName: 'vivian婷ting',
-        content: '又要去澳大利亚了？这次我去的是西澳，有没有听到过珀斯这个地方？我也是第一次听到，原来我是要去毛里求斯的，可恶的航空公司取消了航线，还好我的签证还有效，说走就走。。。',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/50/18/Cii-s1pwAGOISR39AAH8Fz5XY8wAAC8VwHkjqoAAfwv431_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/50/18/Cii-s1pwAGOISR39AAH8Fz5XY8wAAC8VwHkjqoAAfwv431_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/50/18/Cii-s1pwAGOISR39AAH8Fz5XY8wAAC8VwHkjqoAAfwv431_w800_h0_c0_t0.jpg'],
-        company: '西澳大利亚'
+        userName: '游ting',
+        content: '槐影参差覆杏坛，儒门子弟尽高官。却教酒户重修庙，觅我惭惶也不难。',
+        imgList: ['https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663605390&di=0df5a317c1975af35de9f8290f0e60c6&imgtype=0&src=http%3A%2F%2Fwww.sdqfhx.com%2Fupfiles%2Fimage%2F20150813%2F20150813172344_86236.jpg', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663696271&di=105caae084b883b5199409ccc133e9ec&imgtype=0&src=http%3A%2F%2Fwww.kongzi.gov.cn%2Fkeditor%2Fattached%2F20141229%2F20141229095044_4970.jpg', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663696270&di=3f24ff4d30da251ad239ac5d5fc788ae&imgtype=0&src=http%3A%2F%2Fstc.zjol.com.cn%2Fg1%2FM0008EFCggSDVfJI2yATKEQAASCoP83g14435.jpg%3Fwidth%3D720%26height%3D423'],
+        company: '衢州孔庙'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '熊猫慢游',
@@ -112,42 +110,42 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
@@ -161,6 +159,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })

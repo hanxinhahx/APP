@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 95%;
-  background-image: url(https://gw.alicdn.com/imgextra/i2/6000000002937/TB2iTZQtSFjpuFjSspbXXXagVXa_!!0-travel.jpg_760x760q50.jpg_.webp);
+  background-image: url(http://img1.imgtn.bdimg.com/it/u=237408713,1584520826&fm=26&gp=0.jpg);
   filter: blur(10rpx); 
   z-index: 0;
 }
@@ -71,13 +71,14 @@
   align-items: center;
   padding-left: 30rpx;
   background: white;
+  background-color: #cd853f;
 }
 .bar view{
   font-size: 36rpx;
-  color:#1e1e1e;
+  color:#CDBA96;
   font-weight: 600;
   padding-left: 30rpx;
-  border-left: 4rpx solid #1e1e1e;
+  border-left: 4rpx solid #CDBA96;
   height: 40rpx;
   flex: 1;
 }

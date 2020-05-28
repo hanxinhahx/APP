@@ -18,23 +18,22 @@
   </view>
 
   <view class='bar'>
-    <view>精选推荐</view>
+    <view>身未动，心已远</view>
   </view>
 
   <view class='feedList'>
     <view class='content topic'>
-      <image src='https://img.alicdn.com/imgextra/i4/1807288560/TB2fhezd7fb_uJkHFCcXXXagFXa_!!1807288560-0-wefliggy.jpg_790x10000q40'/>
+      <image src='http://img3.imgtn.bdimg.com/it/u=1536461203,2468313050&fm=26&gp=0.jpg'/>
       <view class='title'>
-        <view class='text ellipsis'>2018适合带父母旅行的好地方（内附游玩攻略）！</view>
-        <view class='type'>精选</view>
+        <view class='text ellipsis'>因为有梦，所以勇敢出发，选择出发，便只顾风雨兼程。</view>
+        <!-- <view class='type'>精选</view> -->
       </view>
-      <view class="intro ellipsis-two">我们陪伴父母的时间越来越少,不止我们渴望一次说走就走的旅行，父母也一样，抽点时间带他们出去玩玩吧</view>
+      <view class="intro ellipsis-two">对于旅行，从来都记忆模糊。记不得都去了哪些地方，看了哪些风景，遇到哪些人。尽管同学说，去旅行不在于记忆，而在于当时的那份心情。可是旅行的彼时那刻我的心情一直是好的吗？</view>
     </view>
-
     <view class='content article'>
       <view class='title'>
-        <view class='text ellipsis'>为什么这辈子一定要去一次南极为什么这辈子一定要去一次南极为什么这辈子一定要去一次南极</view>
-        <view class='type'>可订</view>
+        <view class='text ellipsis'>对于身处银河系荒凉偏僻的旋臂上，微小的太阳星系中，一颗渺小蓝色星球上，尘埃一样微不足道的我们，在这个狭小的世界上旅行能有什么意义？</view>
+        <view class='type'>热点</view>
       </view>
       <view class='sub'>
         <image src='https://gw.alicdn.com/imgextra/i3/6000000002416/TB2bAt0XIrHK1JjSszcXXch4VXa_!!2-travel.png_500x500q75.jpg_.webp'/>
@@ -42,7 +41,7 @@
         </view>
       </view>
       <view class='tips'>
-        <view class='author'>旅行值得买</view>
+        <view class='author'>值得旅行</view>
         <view class='data'>
           阅读量 365
         </view>
@@ -60,7 +59,10 @@
           <image wx:for="{{item.imgList}}" wx:for-item="imgItem" wx:key="{{imgItem}}" src="{{imgItem}}"/>
         </view>
         <view class='tips'>
-          <view class='author'>买家秀</view>
+          <view class='author'>游侠帖</view>
+          <view class='data'>
+          点赞量 365
+        </view>
           <view class='data'>
             {{item.company}}
           </view>

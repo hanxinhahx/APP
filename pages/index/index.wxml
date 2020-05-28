@@ -5,27 +5,11 @@
         <icon type="search" size='16'/>
         <text>赶快输入目的地~</text>
     </navigator>
+     <!-- </view> -->
   </view>
-
-    <view>
-    <swiper   indicator-dots="true" autoplay="true" interval="5000" circular="true" indicator-active-color="#7B68EE" indicator-color="rgba(248,248,255,0.5)">
-        <swiper-item>
-          <image src="https://img1.qunarzz.com/travel/d6/1705/9a/3ed66b5e047d86b5.jpg"></image>
-        </swiper-item>
-             <swiper-item>
-          <image src="https://dimg01.c-ctrip.com/images/1006160000010fhj46D41_D_640_10000.jpg?proc=autoorient"></image>
-        </swiper-item>
-             <swiper-item>
-          <image src="http://s3.lvjs.com.cn/uploads/pc/place2/2016-06-29/75140654-790f-459d-b3c9-d844649cdeb2_555_370.jpg"></image>
-        </swiper-item>
-             <swiper-item>
-          <image src="https://att2.citysbs.com/hangzhou/2012/02/28/09/middle_090630_kiuudkcm_bfffd9cbc88f4e49cf2cbab12bde8181.jpg"></image>
-        </swiper-item>
-    </swiper>
-    </view>
   <view class='container content'>
-    <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(255,255,255,0.3)" indicator-active-color="#5fca9c"
-      autoplay="{{true}}" interval="6000" duration="500" circular="{{true}}" >
+    <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(248,248,255,0.5)" indicator-active-color="#7B68EE"
+      autoplay="{{true}}" interval="5000" duration="500" circular="{{true}}" >
       <block wx:for="{{bannerUrls}}" wx:key="{{index}}">
         <swiper-item>
           <image src="{{item}}" class="slide-image"/>
@@ -33,6 +17,9 @@
       </block>
     </swiper>
   </view>
+  <!-- <button>
+    <image src="/images/tickt.png" class="pic1"></image>
+  </button> -->
     <!-- <view class='types'>
       <block wx:for="{{types}}" wx:key="{{index}}">
         <view class='typeItem'>
@@ -166,24 +153,34 @@
 <!-- </view> -->
   <view class="mun">
       <view class="img1">
+      <button class="munbutton">
          <image src="/images/tickt.png" class="pic1"></image>
          <text>门票</text>
+         </button>
       </view>
        <view class="img1">
+        <button class="munbutton">
          <image src="/images/playing.png" class="pic1"></image>
          <text>娱乐</text>
+           </button>
        </view>
         <view class="img1">
+         <button class="munbutton">
        <image src="/images/way.png" class="pic1"></image>
          <text>路线</text>
+           </button>
         </view>
          <view class="img1">
+          <button class="munbutton">
             <image src="/images/hotal1.png" class="pic1"></image>
             <text>酒店</text>
+              </button>
          </view>
                 <view class="img1">
+                 <button class="munbutton">
                   <image src="/images/eating.png" class="pic1"></image>
                   <text>饮食</text>
+                    </button>
                 </view>
     </view>
 </view>

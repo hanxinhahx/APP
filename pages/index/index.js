@@ -8,7 +8,7 @@ Page({
       isAutoplay:true,
       isDots:true,
       interval:5000,
-      bannerUrls: ['https://gw.alicdn.com/tfs/TB1MEhHoN6I8KJjy0FgXXXXzVXa-750-234.jpg_760x760q75.jpg_.webp', 'https://gw.alicdn.com/imgextra/i3/0/TB2O9BaoMLD8KJjSszeXXaGRpXa_!!0-travel.jpg_760x760q75.jpg_.webp', 'https://gw.alicdn.com/tfs/TB1WGnPmBTH8KJjy0FiXXcRsXXa-750-234.jpg_760x760q75.jpg_.webp','https://gw.alicdn.com/tfs/TB1vX7qoC_I8KJjy0FoXXaFnVXa-750-234.jpg_760x760q75.jpg_.webp'],
+      bannerUrls: ['https://img1.qunarzz.com/travel/d6/1705/9a/3ed66b5e047d86b5.jpg', 'https://dimg01.c-ctrip.com/images/1006160000010fhj46D41_D_640_10000.jpg?proc=autoorient','http://s3.lvjs.com.cn/uploads/pc/place2/2016-06-29/75140654-790f-459d-b3c9-d844649cdeb2_555_370.jpg','https://att2.citysbs.com/hangzhou/2012/02/28/09/middle_090630_kiuudkcm_bfffd9cbc88f4e49cf2cbab12bde8181.jpg'],
       types:[
         {
           imgUrl:'https://gw.alicdn.com/tfs/TB1lw9HfgoQMeJjy0FpXXcTxpXa-225-183.png',

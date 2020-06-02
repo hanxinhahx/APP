@@ -1,0 +1,24 @@
+<!-- <View>1.播放网络视频</View> -->
+<view class="p1">
+
+  <video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0300ffa0000bl77tm9ot0004j2dfam0&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>
+ <text>介绍一</text>
+<video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f590000bm3k5btp06vl8ualv8o0&ratio=720p&line=0 "  show-center-play-btn="true" show-mute-btn="true"></video>
+    <text>介绍二</text>
+ <video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f030000bqj6odt9688lo199juug&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>
+    <text>介绍三</text>
+ <video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fc70000bqc66n534q1eahmkcprg&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>
+ <text>介绍四</text>
+ <video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f3c0000bn3usikps0ssesqrvlpg&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>
+ <text>介绍五</text>
+ <video src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200fc70000bor3vbqgnbh9jrmjn700&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>
+ <text>介绍六</text>
+</view>
+
+<!-- <View class="p1">2.播放本地视频</View>
+<view style="display: flex;flex-direction: column;">
+ <video style="width: 100%;height=400px;margin:1px;" src="{{src}}"></video>
+ <view class="btn-area">
+ <button bindtap="bindButtonTap">打开本地视频</button>
+ </view>
+</view> -->

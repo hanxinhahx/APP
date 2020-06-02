@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
+    "pages/intuders/intuders",
     "pages/addCgi/addCgi",
     "pages/destination/destination",
     "pages/find/find",
@@ -37,7 +38,7 @@
         "selectedIconPath": "/images/findselect.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/intuders/intuders",
         "text": "景区介绍",
         "iconPath": "/images/js.png",
         "selectedIconPath": "/images/jsselect.png"

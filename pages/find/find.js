@@ -46,25 +46,25 @@ Page({
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '熊猫慢游',
-        content: '经过了四个多小时车子到达了大叻，来时的山路也不是那么的颠簸，至少并没有给我留下特别深刻的印象，说明应该还是和平常的路没有多大的区别；怎么和在拉萨的时候一样啊，这是下车之后我的第一感觉，因为大叻属于高山小镇，海拔已经比海平面升高了许多',
+        content: '心得',
         imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg'],
         company: '游在大叻'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '熊猫慢游',
-        content: '昨天下午上车之后并也没有睡觉，而是用手机在找寻着芽庄的旅店，之后便是一觉睡到车子到达芽庄，唯一中间有点印象的就是记得半夜有被车子颠醒过一次，然后迷迷糊糊的看见窗外星星点点的灯光一字排开非常漂亮，应该是正沿着海岸线在行驶，但是实在是太困了，根本没有继续观看便又熟睡过去了，可能也正在因为这样的匆匆一瞥让我久久的在回味那美景。',
+        content: '心得',
         imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/51/Cii-s1pvGmGIePqwAA7opuM88v4AAC7YAE_nJ0ADui-288_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/51/Cii-s1pvGmGIePqwAA7opuM88v4AAC7YAE_nJ0ADui-288_w800_h0_c0_t0.jpg'],
         company: '游在芽庄'
       }, {
         userImg: 'https://images.tuniucdn.com/head/2/2143812s.jpg',
         userName: '悦微小鱼',
-        content: '宝钢是1978年12月23日开工建设的，我们四人都是1980年进宝钢工作的，阿根、阿贵是退伍军人，阿芳和我是2000名高中生，而阿根、阿贵分别将于2018年8月、10月光荣退休，想想在一起工作和生活了38年，转眼从弱冠之年到了花甲之年，不久之后将要分别，真是有点依依不舍和两眼泪汪汪的感觉，希望友情永驻。',
+        content: '心得。',
         imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/64/Cii-tFpvKLeIEwYqAAX2fJaKOs4AAC7bQHXq-YABfaU652_w800_h0_c0_t0.JPG'],
         company: '游在三亚'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G3/M00/1C/A0/Cii_LllTdRqIXRl4AAWySHDrT3gAAB35wIk7v8ABbJg999_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '雪泡儿',
-        content: '成都，天府之城，是我最喜欢的城市，满眼的火锅，街道上搓麻的人们都是我爱成都的原因，你可以只为吃，也可以去看一次蜀风雅韵的表演，喝一碗茶，逛一逛有童年记忆的公园，都无比悠闲。',
+        content: '心得。',
         imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4E/EE/Cii-slpu3p-IWMMzAALdpExCNqYAAC64ACyYEIAAt2844_w800_h0_c0_t0.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4E/EE/Cii-slpu3p-IWMMzAALdpExCNqYAAC64ACyYEIAAt2844_w800_h0_c0_t0.jpeg'],
         company: '游在宽窄巷子'
       }, {
@@ -76,7 +76,7 @@ Page({
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G2/M00/9B/A5/Cii-TlkFPOiIVqjFAEYBV6mPBdQAAJhNwH7OOcARgFv182_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '夏草',
-        content: '去年底、在途牛网发现越南一款十二日深度游的旅游产品、我就豪不犹豫的下单了、尽管这次去越南己是第三次了、我的第一次出国就是河内下龙湾、第二次去越南是胡志明市仅过了一夜。二次去越南己是八、九年之前的事了。这次虽然有重复、但美拖、头顿、芽庄、大勒、顺化、会安、岘港都是第一次去、事实证明、这次值得！',
+        content: '心得',
         imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4D/A1/Cii-slptf92ITMo5AAlRB8IJE6UAAC5HwIxkYQACVEf829_w800_h0_c0_t0.JPG', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4D/A1/Cii-slptf92ITMo5AAlRB8IJE6UAAC5HwIxkYQACVEf829_w800_h0_c0_t0.JPG'],
         company: '游在胡志明市'
       }

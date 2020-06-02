@@ -153,7 +153,7 @@
 <!-- </view> -->
   <view class="mun">
       <view class="img1">
-      <button class="munbutton">
+      <button class="munbutton" >
          <image src="/images/tickt.png" class="pic1"></image>
          <text>门票</text>
          </button>
@@ -182,5 +182,16 @@
                   <text>饮食</text>
                     </button>
                 </view>
+        <map  class='map'
+            style='top:{{140 + topNav.height}}rpx'
+            id="map" 
+            longitude="118.8765335083008" 
+            latitude="28.959992620131548"  
+            scale="14" 
+            markers="{{markers}}" 
+            data-markers="{{markers}}" 
+            bindmarkertap='gotohere'
+            show-location >
+        </map>
     </view>
 </view>

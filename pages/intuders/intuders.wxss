@@ -1,0 +1,25 @@
+/* pages/intuders/intuders.wxss */
+.p1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 1000px;
+   /* flex-direction: row; */
+   border: 1px solid black;
+   background-color: burlywood;
+   /* background-image: url(""); */
+}
+
+video{
+     height: 200px;
+     width: 200px;
+     border: 1px solid black;
+     flex: 1;
+      margin: 0.75px;
+}
+text{
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+}

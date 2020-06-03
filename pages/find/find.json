@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "发现",
-  "navigationBarBackgroundColor": "#cd853f"
-
+  "usingComponents": {
+    "section-title": "../../components/SectionTitle/SectionTitle"
+  }
 }

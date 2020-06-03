@@ -4,7 +4,7 @@
   height: 220rpx;
   display: flex;
   align-items: center;
-  background-color:#cd853f;
+  background-color:rgb(198, 228, 240);
   padding-left: 40rpx;
 }
 .userInfo image{

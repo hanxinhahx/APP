@@ -1,73 +1,197 @@
-<!--pages/find/find.wxml-->
+<!--index.wxml-->
 <view class='container'>
-  <view class='findTop'>
-    <view class='bg'></view>
-    <view class='btnList'>
-      <view class='btnItem' wx:for="{{findBtn}}" wx:key="{{index}}">
-        <image src="{{item.icon}}"/>
-        <text>{{item.text}}</text>
-      </view>
-    </view>
-    <view class='scrollBox'>
-      <scroll-view class="scrollList" scroll-x="{{true}}">
-        <view class="scrollItem" wx:for="{{bannerList}}" wx:key="{{index}}">
-          <image src="{{item.img}}"/>
-        </view>
-      </scroll-view>
-    </view>
+  <view class='header'>
+    <navigator url="../search/search" open-type="navigate" class='searchBar'>
+        <icon type="search" size='16'/>
+        <text>赶快输入目的地~</text>
+    </navigator>
+     <!-- </view> -->
   </view>
-
-  <view class='bar'>
-    <view>身未动，心已远</view>
+  <view class='container content'>
+    <swiper class='bannerSwiper' indicator-dots="{{true}}" indicator-color="rgba(248,248,255,0.5)" indicator-active-color="#7B68EE"
+      autoplay="{{true}}" interval="5000" duration="500" circular="{{true}}" >
+      <block wx:for="{{bannerUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
   </view>
+  <!-- <button>
+    <image src="/images/tickt.png" class="pic1"></image>
+  </button> -->
+    <!-- <view class='types'>
+      <block wx:for="{{types}}" wx:key="{{index}}">
+        <view class='typeItem'>
+          <image src="{{item.imgUrl}}"/>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+    </view> -->
 
-  <view class='feedList'>
-    <view class='content topic'>
-      <image src='http://img3.imgtn.bdimg.com/it/u=1536461203,2468313050&fm=26&gp=0.jpg'/>
-      <view class='title'>
-        <view class='text ellipsis'>因为有梦，所以勇敢出发，选择出发，便只顾风雨兼程。</view>
-        <!-- <view class='type'>精选</view> -->
-      </view>
-      <view class="intro ellipsis-two">对于旅行，从来都记忆模糊。记不得都去了哪些地方，看了哪些风景，遇到哪些人。尽管同学说，去旅行不在于记忆，而在于当时的那份心情。可是旅行的彼时那刻我的心情一直是好的吗？</view>
-    </view>
-    <view class='content article'>
-      <view class='title'>
-        <view class='text ellipsis'>对于身处银河系荒凉偏僻的旋臂上，微小的太阳星系中，一颗渺小蓝色星球上，尘埃一样微不足道的我们，在这个狭小的世界上旅行能有什么意义？</view>
-        <view class='type'>热点</view>
-      </view>
-      <view class='sub'>
-        <image src='https://gw.alicdn.com/imgextra/i3/6000000002416/TB2bAt0XIrHK1JjSszcXXch4VXa_!!2-travel.png_500x500q75.jpg_.webp'/>
-        <view class='ellipsis-four'>南极有一种蓝，诗人和高级的摄影技术都拍不出来的纯净的蓝色，这辈子，一定要亲眼去看看南极有一种蓝，诗人和高级的摄影技术都拍不出来的纯净的蓝色，这辈子，一定要亲眼去看看南极有一种蓝，诗人和高级的摄影技术都拍不出来的纯净的蓝色，这辈子，一定要亲眼去看看南极有一种蓝，诗人和高级的摄影技术都拍不出来的纯净的蓝色，这辈子，一定要亲眼去看看
+    <!-- <view class='obSupermarket'>
+      <view class='obHeader'>
+        <view class='left'>
+          <view class='logo'></view>
+          <text>一站汇集全球玩乐</text>
         </view>
+        <text class='right'>更多 ></text>
       </view>
-      <view class='tips'>
-        <view class='author'>值得旅行</view>
-        <view class='data'>
-          阅读量 365
-        </view>
+      <view class='obContent'>
+        <block wx:for="{{obSupermarket}}" wx:key="{{index}}">
+          <view><text>{{item}}</text></view>
+        </block>
       </view>
-    </view>
+    </view> -->
 
-    <view class='feed'>
-      <view class='content userFeed' wx:for="{{feedList}}" wx:key="{{index}}">
-        <view class='userInfo'>
-          <image src="{{item.userImg}}"/>
-          <view class='name ellipsis'>{{item.userName}}</view>
-        </view>
-        <view class="intro ellipsis-three">{{item.content}}</view>
-        <view class='imgBox'>
-          <image wx:for="{{item.imgList}}" wx:for-item="imgItem" wx:key="{{imgItem}}" src="{{imgItem}}"/>
-        </view>
-        <view class='tips'>
-          <view class='author'>游侠帖</view>
-          <view class='data'>
-          点赞量 365
-        </view>
-          <view class='data'>
-            {{item.company}}
+    <!-- <view class='headlines'>
+      <view class='logo'>
+      </view>
+      <swiper class='headlineSwiper' indicator-dots="{{false}}" autoplay="{{true}}" interval="8000" duration="500" circular="{{true}}" vertical="{{true}}">
+      <block wx:for="{{headlines}}" wx:key="{{item.title1}}">
+        <swiper-item>
+          <view class='headline'>
+            <view>{{item.tips1}}</view>
+            <text class='ellipsis'>{{item.title1}}</text>
+          </view>
+          <view class='headline'>
+            <view>{{item.tips2}}</view>
+            <text class='ellipsis'>{{item.title2}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+    </view> -->
+
+    <!-- <view class='barginPrice'>
+      <view class='hotSale'>
+        <view class='title'></view>
+        <text class='name'>特价！昆大丽6天5晚含机票品质跟团游</text>
+        <view class='price'>1780元 Go></view>
+      </view>
+      <view class="ticket ticket1">
+        <text class="title">冬季出行</text>
+        <text class="tips">特价1折起</text>
+      </view>
+      <view class="ticket ticket2">
+        <text class="title">吃喝玩乐尽在酒店</text>
+        <text class="tips">NEW</text>
+      </view>
+    </view> -->
+    
+    <!-- <view class='section firstStation'>
+      <section-title color="#fea000" title="全球第一站"/>
+      <view class='contentWrapper'>
+        <view class='hot'>
+          <view class='hotLeft'>
+            <view class='tips'>推荐</view>
+            <text class='text'>沉醉冰岛极光，初遇冰与火之国</text>
+            <hr/>
+            <text class='people'>1人说好</text>
+          </view>
+          <image src="https://gw.alicdn.com/imgextra/i2/6000000000903/TB2gYJ7nMoQMeJjy1XaXXcSsFXa_!!0-travel.jpg_500x500q75.jpg_.webp" class='hotRight'/>
+        </view> -->
+        <!-- <view class='stations'>
+          <view class='stationItem' wx:for="{{station}}" wx:key="{{index}}">
+            <view class='stationImg'>
+              <image src="{{item.img}}"/>
+              <view>{{item.name}}</view>
+            </view>
+            <view class='stationTitle ellipsis-two'>{{item.intro}}</view>
           </view>
         </view>
       </view>
+    </view> -->
+
+    <!-- <view class='section randomPlace'>
+      <section-title color="#5ee609" title="旅行任意门"/>
+      <view class='contentWrapper'>
+        <view class='placeItem' wx:for="{{randomPlace}}" wx:key="{{index}}">
+          <image src='{{item.img}}'/>
+          <text class='title'>{{item.name}}</text>
+          <text class='tips ellipsis'>{{item.intro}}</text>
+        </view>
+      </view>
+    </view> -->
+
+    <!-- <view class='section hotPlace'>
+      <section-title color="#01b551" title="热门目的地"/>
+      <view class='contentWrapper'>
+        <view class='placeItem left'>
+          <image src='https://gw.alicdn.com/tfs/TB1xVsifgoQMeJjy0FpXXcTxpXa-116-128.jpg_400x400q75.jpg_.webp'/>
+          <view class='bg'></view>
+          <text class='placeName'>三亚</text>
+          <text class='placeNum'>90.1万人去过</text>
+        </view>
+        <view class='right'>
+          <view class='placeItem' wx:for="{{hotPlace}}" wx:key="{{index}}">
+            <image src='{{item.img}}'/>
+            <view class='bg'></view>
+            <text class='placeName'>{{item.name}}</text>
+            <text class='placeNum'>{{item.num}}万人去过</text>
+          </view>
+        </view>
+      </view>
+    </view> -->
+
+    <!-- <view class='section like'>
+      <section-title color="#fd8c26" title="猜你喜欢"/>
+      <view class='contentWrapper'>
+        <view class='likeItem' wx:for="{{youlike}}" wx:key="{{index}}">
+          <view class='imgBox'>
+            <image src='{{item.img}}'/>
+            <view class='type'>{{item.type}}</view>
+          </view>
+          <view class='title ellipsis-two'>{{item.title}}</view>
+          <view class='info'>
+            <text class='price'>¥{{item.price}}</text>
+            <text class='num'>{{item.peopleNum}}人购买</text>
+          </view>
+        </view>
+      </view>
+    </view> -->
+<!-- </view> -->
+  <view class="mun">
+      <view class="img1">
+      <button class="munbutton" >
+         <image src="/images/tickt.png" class="pic1"></image>
+         <text>门票</text>
+         </button>
+      </view>
+       <view class="img1">
+        <button class="munbutton">
+         <image src="/images/playing.png" class="pic1"></image>
+         <text>娱乐</text>
+           </button>
+       </view>
+        <view class="img1">
+         <button class="munbutton">
+       <image src="/images/way.png" class="pic1"></image>
+         <text>路线</text>
+           </button>
+        </view>
+         <view class="img1">
+          <button class="munbutton">
+            <image src="/images/hotal1.png" class="pic1"></image>
+            <text>酒店</text>
+              </button>
+         </view>
+                <view class="img1">
+                 <button class="munbutton">
+                  <image src="/images/eating.png" class="pic1"></image>
+                  <text>饮食</text>
+                    </button>
+                </view>
+        <map  class='map'
+            style='top:{{140 + topNav.height}}rpx'
+            id="map" 
+            longitude="118.8765335083008" 
+            latitude="28.959992620131548"  
+            scale="14" 
+            markers="{{markers}}" 
+            data-markers="{{markers}}" 
+            bindmarkertap='gotohere'
+            show-location >
+        </map>
     </view>
-  </view>
 </view>

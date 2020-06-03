@@ -26,7 +26,9 @@
 }
 
 .munbutton:active{
-  background-color: #a5a5a5;
+  /* background-color: #a5a5a5; */
+  /* border: 2px gray solid; */
+  box-shadow: gray 5rpx 5rpx;
 }
 .munbutton::after{
   border: none;
@@ -52,6 +54,9 @@
   display: flex;
   align-items: center;
 }
+.container{
+  background-color:white;
+}
 .header .searchBar text{
   font-size: 26rpx;
   margin-left: 10rpx;
@@ -63,7 +68,7 @@
 } 
  .bannerSwiper{
   width: 100%;
-  height: 250rpx;
+  height: 400rpx;
 } 
 .bannerSwiper image{
   width: 100%;
@@ -73,12 +78,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 80rpx;
   width: 100%;
-  height: 500rpx;
+  height: 400rpx;
   position: relative;
   background-color: 	white;
-  padding-top: 50rpx;
+  /* padding-top: 50rpx; */
 }
 .img1{
   width: 110rpx;
@@ -129,7 +135,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 30rpx;
-  background: linear-gradient(rgba(225, 236, 115, 0.3),#fff);
+  /* background: linear-gradient(rgba(225, 236, 115, 0.3),#fff); */
+  background-color: white;
 }
 .obSupermarket .obHeader .left .logo{
   width: 140rpx;
@@ -500,11 +507,36 @@
   height: 100%;
 }
 
-map {
-  width:100%;
-  height: 100%;
-  position: relative;
-  top: 150rpx;
-  background-color: #f7f7f7;
-  border: #a5a5a5 1px solid;
+.newsblock{
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 100rpx;
+}
+.newsleft{
+  width: 95%;
+  height: 350rpx;
+  padding: 0;
+  text-align: center;
+  border-radius: 14rpx;
+  margin: 20rpx auto;
+  background-color: white;
+  line-height: 50rpx;
+  box-shadow: rgba(90, 89, 89, 0.584) 10rpx 10rpx;
+}
+/* .newsright{
+  width: 100%;
+  height: 400rpx;
+  border: 2px gray solid;
+  text-align: center;
+  top: 16rpx;
+  padding: 0;
+
+} */
+.newsimage{
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
 }

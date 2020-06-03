@@ -170,76 +170,14 @@ Page({
         }
       ]
     },
-
-    loadMore:function(){
-      const loadTimes = this.data.loadTimes;
-      const perLoad = this.data.perLoad;
-      let temArr = this.data.likePlace.slice((loadTimes * perLoad), (loadTimes*perLoad)+perLoad);
-      if(temArr.length<=0){
-        return;
-      }
-
-      wx.showLoading({
-        title: '加载中',
-      });
-      setTimeout(() => {
-        let youlikeArr = this.data.youlike.slice();
-        youlikeArr.push(...temArr);
-        this.setData({
-          youlike: youlikeArr,
-          loadTimes: loadTimes + 1
-        },()=>{
-          wx.hideLoading();
-        })
-      },1000);
+    onTapDayWeather(){
+      wx.navigateTo({
+        url: '/pages/Map/Map',
+      })
     },
-
-    onLoad: function (options) {
-      // Do some initialize when page load.
-    },
-    onReady: function () {
-    },
-    onShow: function () {
-      // Do something when page show.
-    },
-    onHide: function () {
-      // Do something when page hide.
-    },
-    onUnload: function () {
-      // Do something when page close.
-    },
-    onPullDownRefresh: function () {
-      // Do something when pull down.
-    },
-    onReachBottom: function () {
-      this.loadMore();
-    },
-    gotohere:function(res){
-      console.log(res);
-      let lat = ''; // 获取点击的markers经纬度
-      let lon = ''; // 获取点击的markers经纬度
-      let name = ''; // 获取点击的markers名称
-      let markerId = res.markerId;// 获取点击的markers  id
-      let markers = res.currentTarget.dataset.markers;// 获取markers列表
-   
-      for (let item of markers){
-        if (item.id === markerId) {
-          lat = item.latitude;
-          lon = item.longitude;
-          name = item.callout.content;
-          wx.openLocation({ // 打开微信内置地图，实现导航功能（在内置地图里面打开地图软件）
-            latitude: lat,
-            longitude: lon,
-            name:name,
-            success:function(res){
-              console.log(res);
-            },
-            fail:function(res){
-              console.log(res);
-            }
-          })
-          break;
-        }
-      }
-    },
+    Kongclick(){
+      wx.navigateTo({
+        url: '/pages/KongZi/KongZi',
+      })
+    }
 })

@@ -1,0 +1,12 @@
+<!--pages/Map/Map.wxml-->
+  <map  class='map'
+            style='top:{{140 + topNav.height}}rpx'
+            id="map" 
+            longitude="118.8765335083008" 
+            latitude="28.959992620131548"  
+            scale="14" 
+            markers="{{markers}}" 
+            data-markers="{{markers}}" 
+            bindmarkertap='gotohere'
+            show-location >
+        </map>

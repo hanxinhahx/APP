@@ -6,13 +6,17 @@
     "pages/addCgi/addCgi",
     "pages/destination/destination",
     "pages/find/find",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/Map/Map",
+    "pages/KongZi/KongZi",
+    "pages/Hill/Hill",
+    "pages/Park/Park"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText":"首页",
+    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black",
     "navigationStyle": "default",
     "enablePullDownRefresh": true,
@@ -53,7 +57,7 @@
   },
   "debug": true,
   "sitemapLocation": "sitemap.json",
-  "permission":{
+  "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }

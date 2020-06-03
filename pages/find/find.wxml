@@ -17,140 +17,6 @@
       </block>
     </swiper>
   </view>
-  <!-- <button>
-    <image src="/images/tickt.png" class="pic1"></image>
-  </button> -->
-    <!-- <view class='types'>
-      <block wx:for="{{types}}" wx:key="{{index}}">
-        <view class='typeItem'>
-          <image src="{{item.imgUrl}}"/>
-          <text>{{item.title}}</text>
-        </view>
-      </block>
-    </view> -->
-
-    <!-- <view class='obSupermarket'>
-      <view class='obHeader'>
-        <view class='left'>
-          <view class='logo'></view>
-          <text>一站汇集全球玩乐</text>
-        </view>
-        <text class='right'>更多 ></text>
-      </view>
-      <view class='obContent'>
-        <block wx:for="{{obSupermarket}}" wx:key="{{index}}">
-          <view><text>{{item}}</text></view>
-        </block>
-      </view>
-    </view> -->
-
-    <!-- <view class='headlines'>
-      <view class='logo'>
-      </view>
-      <swiper class='headlineSwiper' indicator-dots="{{false}}" autoplay="{{true}}" interval="8000" duration="500" circular="{{true}}" vertical="{{true}}">
-      <block wx:for="{{headlines}}" wx:key="{{item.title1}}">
-        <swiper-item>
-          <view class='headline'>
-            <view>{{item.tips1}}</view>
-            <text class='ellipsis'>{{item.title1}}</text>
-          </view>
-          <view class='headline'>
-            <view>{{item.tips2}}</view>
-            <text class='ellipsis'>{{item.title2}}</text>
-          </view>
-        </swiper-item>
-      </block>
-    </swiper>
-    </view> -->
-
-    <!-- <view class='barginPrice'>
-      <view class='hotSale'>
-        <view class='title'></view>
-        <text class='name'>特价！昆大丽6天5晚含机票品质跟团游</text>
-        <view class='price'>1780元 Go></view>
-      </view>
-      <view class="ticket ticket1">
-        <text class="title">冬季出行</text>
-        <text class="tips">特价1折起</text>
-      </view>
-      <view class="ticket ticket2">
-        <text class="title">吃喝玩乐尽在酒店</text>
-        <text class="tips">NEW</text>
-      </view>
-    </view> -->
-    
-    <!-- <view class='section firstStation'>
-      <section-title color="#fea000" title="全球第一站"/>
-      <view class='contentWrapper'>
-        <view class='hot'>
-          <view class='hotLeft'>
-            <view class='tips'>推荐</view>
-            <text class='text'>沉醉冰岛极光，初遇冰与火之国</text>
-            <hr/>
-            <text class='people'>1人说好</text>
-          </view>
-          <image src="https://gw.alicdn.com/imgextra/i2/6000000000903/TB2gYJ7nMoQMeJjy1XaXXcSsFXa_!!0-travel.jpg_500x500q75.jpg_.webp" class='hotRight'/>
-        </view> -->
-        <!-- <view class='stations'>
-          <view class='stationItem' wx:for="{{station}}" wx:key="{{index}}">
-            <view class='stationImg'>
-              <image src="{{item.img}}"/>
-              <view>{{item.name}}</view>
-            </view>
-            <view class='stationTitle ellipsis-two'>{{item.intro}}</view>
-          </view>
-        </view>
-      </view>
-    </view> -->
-
-    <!-- <view class='section randomPlace'>
-      <section-title color="#5ee609" title="旅行任意门"/>
-      <view class='contentWrapper'>
-        <view class='placeItem' wx:for="{{randomPlace}}" wx:key="{{index}}">
-          <image src='{{item.img}}'/>
-          <text class='title'>{{item.name}}</text>
-          <text class='tips ellipsis'>{{item.intro}}</text>
-        </view>
-      </view>
-    </view> -->
-
-    <!-- <view class='section hotPlace'>
-      <section-title color="#01b551" title="热门目的地"/>
-      <view class='contentWrapper'>
-        <view class='placeItem left'>
-          <image src='https://gw.alicdn.com/tfs/TB1xVsifgoQMeJjy0FpXXcTxpXa-116-128.jpg_400x400q75.jpg_.webp'/>
-          <view class='bg'></view>
-          <text class='placeName'>三亚</text>
-          <text class='placeNum'>90.1万人去过</text>
-        </view>
-        <view class='right'>
-          <view class='placeItem' wx:for="{{hotPlace}}" wx:key="{{index}}">
-            <image src='{{item.img}}'/>
-            <view class='bg'></view>
-            <text class='placeName'>{{item.name}}</text>
-            <text class='placeNum'>{{item.num}}万人去过</text>
-          </view>
-        </view>
-      </view>
-    </view> -->
-
-    <!-- <view class='section like'>
-      <section-title color="#fd8c26" title="猜你喜欢"/>
-      <view class='contentWrapper'>
-        <view class='likeItem' wx:for="{{youlike}}" wx:key="{{index}}">
-          <view class='imgBox'>
-            <image src='{{item.img}}'/>
-            <view class='type'>{{item.type}}</view>
-          </view>
-          <view class='title ellipsis-two'>{{item.title}}</view>
-          <view class='info'>
-            <text class='price'>¥{{item.price}}</text>
-            <text class='num'>{{item.peopleNum}}人购买</text>
-          </view>
-        </view>
-      </view>
-    </view> -->
-<!-- </view> -->
   <view class="mun">
       <view class="img1">
       <button class="munbutton" >
@@ -165,7 +31,7 @@
            </button>
        </view>
         <view class="img1">
-         <button class="munbutton">
+         <button class="munbutton" bindtap="onTapDayWeather">
        <image src="/images/way.png" class="pic1"></image>
          <text>路线</text>
            </button>
@@ -182,16 +48,19 @@
                   <text>饮食</text>
                     </button>
                 </view>
-        <map  class='map'
-            style='top:{{140 + topNav.height}}rpx'
-            id="map" 
-            longitude="118.8765335083008" 
-            latitude="28.959992620131548"  
-            scale="14" 
-            markers="{{markers}}" 
-            data-markers="{{markers}}" 
-            bindmarkertap='gotohere'
-            show-location >
-        </map>
+      <view class="newsblock">
+          <navigator class="newsleft"  bindtap="Kongclick">
+              <image class="newsimage" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591204040700&di=1b0faac9c60d77b06c1b3cb43c2665a9&imgtype=0&src=http%3A%2F%2Fn2-q.mafengwo.net%2Fs11%2FM00%2F99%2FD2%2FwKgBEFr-ZguACJ_dAA9zIXulNQY77.jpeg%3FimageMogr2%2Fstrip"></image>
+              <text>孔子铜像</text>
+        </navigator>
+           <navigator class="newsleft">
+              <image class="newsimage" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591204561934&di=67368ed6990e115d24fdec874ce90935&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F043%2F510%2F047%2F4d3ded4cf50945fcae46836824d4a014.jpg"></image>
+              <text>孔庙后花园</text>
+         </navigator>
+            <navigator class="newsleft">
+              <image class="newsimage" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1591204561934&di=456540123982aa04f5f4add291176ac4&imgtype=0&src=http%3A%2F%2Fwww.qz123.com%2FUploads%2FImages%2F20190313%2F6368807223504388156993789.jpg"></image>
+              <text>府山公园</text>
+         </navigator>
+      </view>
     </view>
 </view>

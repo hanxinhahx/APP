@@ -1,0 +1,9 @@
+/* pages/Map/Map.wxss */
+map {
+  width:100%;
+  height: 400rpx;
+  position: relative;
+  top: 150rpx;
+  background-color: #f7f7f7;
+  border: #a5a5a5 1px solid;
+}

@@ -1,0 +1,4 @@
+/* pages/index1/index1.wxss */
+text{
+  font-size: 35px;
+}

@@ -46,39 +46,39 @@ Page({
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '熊猫慢游',
-        content: '心得',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/81/Cii-tFpvOuuIABgqAAkuLHhQo3UAAC7fgJPD3kACS5E996_w800_h0_c0_t0.jpg'],
-        company: '游在大叻'
+        content: '来衢州之前，只知道只去过山东曲阜的孔庙。不曾想，在衢州竟然也有如此有名的孔庙南府~衢州孔氏家庙素称南宗（北宗山东曲阜），具有700多年的历史。全国仅存的两个孔氏家庙之一，素称南宗。衢州也就被孔氏称为“第二圣地”。庙对面广场上孔子的巨大石雕像，比例很夸张的，巨大的身材，狭小的脑袋，让人感觉像是一只竖立起来的千年老龟。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100f0a0000004rda33099.jpg', 'https://youimg1.c-ctrip.com/target/100k0a0000004rdi1F4BC.jpg', 'https://youimg1.c-ctrip.com/target/100u0a0000004rds61C36.jpg'],
+        company: '游在衢州'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
-        userName: '熊猫慢游',
-        content: '心得',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/51/Cii-s1pvGmGIePqwAA7opuM88v4AAC7YAE_nJ0ADui-288_w800_h0_c0_t0.jpg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4F/51/Cii-s1pvGmGIePqwAA7opuM88v4AAC7YAE_nJ0ADui-288_w800_h0_c0_t0.jpg'],
-        company: '游在芽庄'
+        userName: '果果',
+        content: '衢州孔庙素称南宗，具有700多年的历史。按山东曲阜孔庙的规模建造，亦分孔府、孔庙两部分。庙内古木参天，殿宇宏伟，思鲁阁前的“先圣遗像”碑，据传为唐吴道子所绘，极为珍贵。整个古建筑群肃穆凝重，洋溢着浓郁的儒家文化氛围。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100t0g0000007qnin9796.jpg', 'https://youimg1.c-ctrip.com/target/10090g0000007qxbq3A96.jpg'],
+        company: '游在衢州'
       }, {
         userImg: 'https://images.tuniucdn.com/head/2/2143812s.jpg',
         userName: '悦微小鱼',
-        content: '心得。',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4F/64/Cii-tFpvKLeIEwYqAAX2fJaKOs4AAC7bQHXq-YABfaU652_w800_h0_c0_t0.JPG'],
-        company: '游在三亚'
+        content: '服务态度太差！！！问了几个问题就用方言骂过来 以为我听不懂 G20别的地方都有复印的地方 这里要自己出去找复印店 微信公众号推送里也没有说要复印件 孔庙总体挺好的',
+        imgList: ['https://youimg1.c-ctrip.com/target/100l080000002vnk525A2.jpg'],
+        company: '游在孔庙'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G3/M00/1C/A0/Cii_LllTdRqIXRl4AAWySHDrT3gAAB35wIk7v8ABbJg999_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '雪泡儿',
-        content: '心得。',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4E/EE/Cii-slpu3p-IWMMzAALdpExCNqYAAC64ACyYEIAAt2844_w800_h0_c0_t0.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4E/EE/Cii-slpu3p-IWMMzAALdpExCNqYAAC64ACyYEIAAt2844_w800_h0_c0_t0.jpeg'],
-        company: '游在宽窄巷子'
+        content: '历史文化悠久，了解孔子文化思想，内涵丰富，有图片，有家庙，有文物，风景优美，历史丰富，交通便利，周边博物馆，孔子文化公园，非常有意义。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100f0f0000007g6v48E12.jpg', 'https://youimg1.c-ctrip.com/target/100e0f0000007g86lCCF2.jpg'],
+        company: '游在衢州孔庙'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G2/M00/2B/CC/Cii-T1g7iJmILXDfAAl7gR5XZFcAAE6cABV-J8ACXuZ398_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '黏黏小狐狸',
-        content: '南京是一个计划了好久的地方，这次趁着途牛有活动买的机加酒的套餐其实非常划算。',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4D/94/Cii-tFptdNaIeSjyAAOY5XFzJpEAAC5EABv-ucAA5j9262_w800_h0_c0_t0.JPG', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4D/94/Cii-tFptdNaIeSjyAAOY5XFzJpEAAC5EABv-ucAA5j9262_w800_h0_c0_t0.JPG', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4D/94/Cii-tFptdNaIeSjyAAOY5XFzJpEAAC5EABv-ucAA5j9262_w800_h0_c0_t0.JPG'],
-        company: '侵华日军南京大屠杀遇难同胞纪念馆'
+        content: '孔庙所在位置闹市区，一片旅游玩乐的好地方，生活便利。门票10元，主要介绍展示孔子及其家族的历史文化、器物，环境挺不错的。衢州孔庙是家庙，全国重点文保单位。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100l0900000042udt02CA.jpg', 'https://youimg1.c-ctrip.com/target/100w0900000042ulfA477.jpg', 'https://youimg1.c-ctrip.com/target/100c0900000042ufvB5EA.jpg'],
+        company: '孔庙'
       }, {
         userImg: 'https://m.tuniucdn.com/fb2/t1/G2/M00/9B/A5/Cii-TlkFPOiIVqjFAEYBV6mPBdQAAJhNwH7OOcARgFv182_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '夏草',
-        content: '心得',
-        imgList: ['https://m.tuniucdn.com/fb2/t1/G5/M00/4D/A1/Cii-slptf92ITMo5AAlRB8IJE6UAAC5HwIxkYQACVEf829_w800_h0_c0_t0.JPG', 'https://m.tuniucdn.com/fb2/t1/G5/M00/4D/A1/Cii-slptf92ITMo5AAlRB8IJE6UAAC5HwIxkYQACVEf829_w800_h0_c0_t0.JPG'],
-        company: '游在胡志明市'
+        content: '来衢州孔庙还是很值得去的，作为孔氏南宗家庙具有唯一性，门票仅十元，景区内配有免费电子导游和介绍影像，丰富知识，性价比高。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100d0c0000006ps6lF953.jpg', 'https://youimg1.c-ctrip.com/target/100t0c0000006pu5u9B6D.jpg'],
+        company: '游在孔庙'
       }
     ]
   },

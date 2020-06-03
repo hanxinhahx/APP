@@ -33,7 +33,7 @@
     <view class='content article'>
       <view class='title'>
         <view class='text ellipsis'>对于身处银河系荒凉偏僻的旋臂上，微小的太阳星系中，一颗渺小蓝色星球上，尘埃一样微不足道的我们，在这个狭小的世界上旅行能有什么意义？</view>
-        <view class='type'>热点</view>
+        <!-- <view class='type'>热点</view> -->
       </view>
       <view class='sub'>
         <image src='https://gw.alicdn.com/imgextra/i3/6000000002416/TB2bAt0XIrHK1JjSszcXXch4VXa_!!2-travel.png_500x500q75.jpg_.webp'/>

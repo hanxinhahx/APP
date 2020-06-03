@@ -61,6 +61,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 40rpx;
 }
 
 .bar{
@@ -70,11 +71,11 @@
   align-items: center;
   padding-left: 30rpx;
   background: white;
-  background-color: white;
+  background-color: #cd853f;
 }
 .bar view{
   font-size: 36rpx;
-  color:	black;
+  color:#CDBA96;
   font-weight: 600;
   padding-left: 30rpx;
   border-left: 4rpx solid #CDBA96;

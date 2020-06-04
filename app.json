@@ -16,7 +16,8 @@
     "pages/Ticket/Ticket",
     "pages/Playing/Playing",
     "pages/Hotel/Hotel",
-    "pages/Eating/Eating"
+    "pages/Eating/Eating",
+    "pages/user/center/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

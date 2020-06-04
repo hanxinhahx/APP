@@ -1,183 +1,169 @@
-//index.js
-const qcloud = require('../../vendor/wafer2-client-sdk/index');
-const config = require('../../config');
-const util = require('../../utils/util.js');
-
+// pages/find/find.js
 Page({
-    data: {
-      isAutoplay:true,
-      isDots:true,
-      interval:5000,
-      bannerUrls: ['https://img1.qunarzz.com/travel/d6/1705/9a/3ed66b5e047d86b5.jpg', 'https://dimg01.c-ctrip.com/images/1006160000010fhj46D41_D_640_10000.jpg?proc=autoorient','http://s3.lvjs.com.cn/uploads/pc/place2/2016-06-29/75140654-790f-459d-b3c9-d844649cdeb2_555_370.jpg','https://att2.citysbs.com/hangzhou/2012/02/28/09/middle_090630_kiuudkcm_bfffd9cbc88f4e49cf2cbab12bde8181.jpg'],
-      types:[
-        {
-          imgUrl:'https://gw.alicdn.com/tfs/TB1lw9HfgoQMeJjy0FpXXcTxpXa-225-183.png',
-          title:'机票'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1KsxcbjihSKJjy0FiXXcuiFXa-225-183.png',
-          title: '酒店客栈'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1YxNfbjihSKJjy0FlXXadEXXa-225-183.png',
-          title: '火车票'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1A0hdbaagSKJjy0FhXXcrbFXa-225-183.png',
-          title: '汽车票'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1G_E.a6ihSKJjy0FeXXbJtpXa-227-183.png',
-          title: '用车'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1YhCPfgMPMeJjy1XcXXXpppXa-225-183.png',
-          title: '旅游线路'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1NBJibaagSKJjy0FcXXcZeVXa-225-183.png',
-          title: '周边游'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1wtlcbjihSKJjy0FfXXbGzFXa-225-183.png',
-          title: '门票'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB13_9IfgoQMeJjy0FpXXcTxpXa-225-183.png',
-          title: '领里程'
-        }, {
-          imgUrl: 'https://gw.alicdn.com/tfs/TB1rv1IfgMPMeJjy1XbXXcwxVXa-227-183.png',
-          title: '全部'
-        }
-      ],
-      obSupermarket: ['国际机票', '签证', '国际酒店', '国际租车', '接送机', '境外上网', '景点票务', '当地玩乐'],
-      headlines:[{
-        tips1:'精选',
-        title1:'海南五大小众海湾，景色绝美还不要门票',
-        tips2:'超赞',
-        title2:'这里的美景随手一拍都是大片'
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    findBtn: [
+      {
+        icon: 'https://gw.alicdn.com/tfs/TB1XhMFbwoQMeJjy0FoXXcShVXa-48-48.png_48x48q50.jpg_.webp',
+        text: '笔记'
       }, {
-        tips1: '精选',
-        title1: '2月最佳旅行地出炉！用一场旅行犒劳努力的自己',
-        tips2: '超赞',
-        title2: '告诉你五天怎么玩遍贵州经典的景点'
+        icon: 'https://gw.alicdn.com/tfs/TB13HEsbrsTMeJjSszhXXcGCFXa-48-48.png_48x48q50.jpg_.webp',
+        text: '头条'
+      }, {
+        icon: 'https://gw.alicdn.com/tfs/TB1AcoBbEgQMeJjy0FgXXc5dXXa-48-48.png_48x48q50.jpg_.webp',
+        text: '游记'
+      },
+    ],
+    bannerList: [
+      {
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590428821641&di=3a40fd5401a1e9e3eb2b42c45ec91910&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2F10030c0000006pa0mC8B0.jpg'
+      }, {
+        img: 'http://youimg1.c-ctrip.com/target/tg/673/574/078/1353ea8d431540ddb462c80795ffc6fe.jpg'
+      }, {
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590502424410&di=7b38a9773f3b8b088068c5d7727d1114&imgtype=0&src=http%3A%2F%2Fold.cppfoto.com%2Fworks%2F2015%2F171%2F14922%2F0%2F01710014922-15113011415890_o.jpg'
+      }, {
+        img: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590502663268&di=5a66b1b63a0529f0eab9541964afcabd&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ffd%2Ftg%2Fg5%2FM02%2FD4%2FAE%2FCggYr1bhQWiAUWiTAAPdlNzS4X0844.jpg'
       }],
-      station:[
-        {
-          name:'香港',
-          img:'https://gw.alicdn.com/imgextra/i2/6000000007922/TB2pD1Sae2CK1JjSZFIXXa3OpXa_!!0-travel.jpg_400x400q75.jpg_.webp',
-          intro:'初赏维港夜景，重返梦幻童年'
-        }, {
-          name: '日本',
-          img: 'https://gw.alicdn.com/imgextra/i4/6000000006424/TB2OOhnXBOBJuJjy1XdXXXIXVXa_!!2-travel.png_400x400q75.jpg_.webp',
-          intro: '第一次的邮轮之旅，去赛琳娜号'
-        }, {
-          name: '泰国',
-          img: 'https://gw.alicdn.com/imgextra/i2/6000000004125/TB2XILLXhHBK1JjSZFkXXbg9VXa_!!0-travel.jpg_400x400q75.jpg_.webp',
-          intro: '普吉亲子游，收获中泰友谊'
-        }
-      ],
-      randomPlace:[
-        {
-          img:'https://gw.alicdn.com/tips/TB24CFwbShlpuFjSspkXXa1ApXa_!!689896364.jpg_400x400q75.jpg_.webp',
-          name:'爸妈放心游',
-          intro:'品质送爸妈'
-        }, {
-          img: 'https://gw.alicdn.com/tips/TB2KPh1sXXXXXamXXXXXXXXXXXX_!!490728022.jpg_400x400q75.jpg_.webp',
-          name: '江浙沪包游',
-          intro: '江南水乡荡悠悠'
-        }, {
-          img: 'https://gw.alicdn.com/tips/i6/TB1ArlNoL2H8KJjy1zkT3Br7pXa_044157.jpg_400x400q75.jpg_.webp',
-          name: '全球游园汇',
-          intro: '有些地方没打卡'
-        }, {
-          img: 'https://gw.alicdn.com/tips/T2aA4EXllaXXXXXXXX_!!503505992.jpg_400x400q75.jpg_.webp',
-          name: '潜水老司机',
-          intro: '旱鸭子也能潜水'
-        }, {
-          img: 'https://gw.alicdn.com/i2/T1PSH_FdNcXXXXXXXX_!!0-item_pic.jpg_400x400q75.jpg_.webp',
-          name: '泡泡温泉',
-          intro: '泡泡温泉泡泡你'
-        }, {
-          img: 'https://gw.alicdn.com/imgextra/i3/6000000004210/TB2suRdao3iyKJjSspnXXXbIVXa_!!0-travel.jpg_400x400q75.jpg_.webp',
-          name: '天堂海岛游',
-          intro: '享受马尔代夫自然美景'
-        }
-      ],
-      hotPlace:[
-        {
-          name: '巴厘岛',
-          img: 'https://gw.alicdn.com/imgextra/i3/6000000004600/TB2CtiIuhRDOuFjSZFzXXcIipXa_!!0-travel.jpg_760x760q50.jpg_.webp',
-          num: '46.7'
-        }, {
-          name: '武汉',
-          img: 'https://gw.alicdn.com/imgextra/i3/6000000001348/TB2_ENirb0kpuFjy0FjXXcBbVXa_!!2-travel.png_540x540q50.jpg_.webp',
-          num: '84.3'
-        }, {
-          name: '越南',
-          img: 'https://gw.alicdn.com/imgextra/i2/6000000006173/TB2_TJbvYtlpuFjSspfXXXLUpXa_!!0-travel.jpg_760x760q50.jpg_.webp',
-          num: '53'
-        }, {
-          name: '上海',
-          img: 'https://gw.alicdn.com/imgextra/i4/6000000006745/TB235SueLNZWeJjSZFpXXXjBFXa_!!0-travel.jpg_760x760q50.jpg_.webp',
-          num: '78.9'
-        }
-      ],
-      youlike:[],
-      loadTimes:0,
-      perLoad:4,
-      likePlace:[
-        {
-          type:'三亚 | 自由行',
-          img:'https://gw.alicdn.com/bao/uploaded/i4/2256687003/TB2NTLRbTTI8KJjSsphXXcFppXa_!!2256687003.jpg_400x400q75.jpg_.webp',
-          title:'海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
-          price:'1999',
-          peopleNum:'1934'
-        }, {
-          type: '迪拜 | 跟团游',
-          img: 'https://gw.alicdn.com/bao/uploaded/i3/3190378410/TB28Gs5bgnD8KJjy1XdXXaZsVXa_!!3190378410.jpg_400x400q75.jpg_.webp',
-          title: '迪拜旅游帆船酒店5678星定制7天私家团旅行含门票餐厅包车直升机',
-          price: '37880',
-          peopleNum: '154'
-        }, {
-          type: '塞班 | 自由行',
-          img: 'https://gw.alicdn.com/bao/uploaded/i2/2935198750/TB2a1..fL6H8KJjy0FjXXaXepXa_!!2935198750.jpg_400x400q75.jpg_.webp',
-          title: '春节出发美国塞班岛自由行5-6天含机票酒店赠送环岛+军舰岛旅游',
-          price: '2999',
-          peopleNum: '14'
-        }, {
-          type: '巴黎 | 跟团游',
-          img: 'https://gw.alicdn.com/i4/754920082/TB2BUIWnbplpuFjSspiXXcdfFXa_!!754920082.jpg_400x400q75.jpg_.webp',
-          title: '海南三亚5天4晚自由行 希尔顿泳池房连住 蜈支洲酒店泳池别墅自驾',
-          price: '6978',
-          peopleNum: '194'
-        }, {
-          type: '甘孜 | 跟团游',
-          img: 'https://gw.alicdn.com/bao/uploaded/i7/TB1mKvOdMvD8KJjSsplTAGIEFXa_121140.jpg_400x400q75.jpg_.webp',
-          title: '四川成都到海螺沟旅游燕子沟3天2晚纯玩跟团三日游温泉游中青旅',
-          price: '299',
-          peopleNum: '434'
-        }, {
-          type: '东京 | 自由行',
-          img: 'https://gw.alicdn.com/bao/uploaded/i1/2438506708/TB2xKvZayqAXuNjy1XdXXaYcVXa_!!2438506708.jpg_400x400q75.jpg_.webp',
-          title: '北京直飞东京大阪5-7天特价机票自由行 五星全日空往返 日本旅游',
-          price: '2499',
-          peopleNum: '634'
-        }, {
-          type: '香港 | 跟团游',
-          img: 'https://gw.alicdn.com/bao/uploaded/i3/2120928523/TB2RlJjXNjxQeBjy1zbXXbqApXa_!!2120928523.jpg_400x400q75.jpg_.webp',
-          title: '春节抢全国双飞港澳游5天4晚自由行迪士尼海洋公园香港澳门旅游团',
-          price: '899',
-          peopleNum: '1854'
-        }, {
-          type: '西安 | 跟团游',
-          img: 'https://gw.alicdn.com/i3/2697550341/TB2Jey3qVXXXXbzXpXXXXXXXXXX_!!2697550341.jpg_400x400q75.jpg_.webp',
-          title: '飞猪专线陕西西安旅游兵马俑一日游纯玩跟团游含华清池兵马俑门票',
-          price: '235',
-          peopleNum: '4676'
-        }
-      ]
-    },
-    onTapDayWeather(){
-      wx.navigateTo({
-        url: '/pages/Map/Map',
-      })
-    },
-    Kongclick(){
-      wx.navigateTo({
-        url: '/pages/KongZi/KongZi',
-      })
+    feedList: [],
+    loadTimes: 0,
+    perLoad: 4,
+    dataList: [
+      {
+        userImg: 'https://m.tuniucdn.com/filebroker/cdn/snc/e0/42/e0424052abef7fbcb73359c9279fb849_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '奥特曼打怪兽',
+        content: '看得出是用心维护的，十元门票也是象征性的，门票附带本迷你论语，里面有介绍孔庙的纪录片循环播放，有很多自助售卖的东西，象征性收1元全靠自律，不错。',
+        imgList: ['http://5b0988e595225.cdn.sohucs.com/images/20190212/d1a814735fee4c1aa3f9fd8aeac092ec.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/51/9E/Cii-s1pxQaSIFogLAAWHUQgwZU8AAC-RgG2fr4ABYdp67_w800_h0_c0_t0.jpeg'],
+        company: '游在衢州'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/4E/5B/Cii-s1pujnaIBBAuABeZh8xcHEYAAC58wD1ASAAF5mf376_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '游ting',
+        content: '槐影参差覆杏坛，儒门子弟尽高官。却教酒户重修庙，觅我惭惶也不难。',
+        imgList: ['https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663605390&di=0df5a317c1975af35de9f8290f0e60c6&imgtype=0&src=http%3A%2F%2Fwww.sdqfhx.com%2Fupfiles%2Fimage%2F20150813%2F20150813172344_86236.jpg', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663696271&di=105caae084b883b5199409ccc133e9ec&imgtype=0&src=http%3A%2F%2Fwww.kongzi.gov.cn%2Fkeditor%2Fattached%2F20141229%2F20141229095044_4970.jpg', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590663696270&di=3f24ff4d30da251ad239ac5d5fc788ae&imgtype=0&src=http%3A%2F%2Fstc.zjol.com.cn%2Fg1%2FM0008EFCggSDVfJI2yATKEQAASCoP83g14435.jpg%3Fwidth%3D720%26height%3D423'],
+        company: '衢州孔庙'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '熊猫慢游',
+        content: '来衢州之前，只知道只去过山东曲阜的孔庙。不曾想，在衢州竟然也有如此有名的孔庙南府~衢州孔氏家庙素称南宗（北宗山东曲阜），具有700多年的历史。全国仅存的两个孔氏家庙之一，素称南宗。衢州也就被孔氏称为“第二圣地”。庙对面广场上孔子的巨大石雕像，比例很夸张的，巨大的身材，狭小的脑袋，让人感觉像是一只竖立起来的千年老龟。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100f0a0000004rda33099.jpg', 'https://youimg1.c-ctrip.com/target/100k0a0000004rdi1F4BC.jpg', 'https://youimg1.c-ctrip.com/target/100u0a0000004rds61C36.jpg'],
+        company: '游在衢州'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G5/M00/07/CA/Cii-slok4dCIRWQZAH0p2IGs8cIAAAYwQD2IkkAfSnw333_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '果果',
+        content: '衢州孔庙素称南宗，具有700多年的历史。按山东曲阜孔庙的规模建造，亦分孔府、孔庙两部分。庙内古木参天，殿宇宏伟，思鲁阁前的“先圣遗像”碑，据传为唐吴道子所绘，极为珍贵。整个古建筑群肃穆凝重，洋溢着浓郁的儒家文化氛围。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100t0g0000007qnin9796.jpg', 'https://youimg1.c-ctrip.com/target/10090g0000007qxbq3A96.jpg'],
+        company: '游在衢州'
+      }, {
+        userImg: 'https://images.tuniucdn.com/head/2/2143812s.jpg',
+        userName: '悦微小鱼',
+        content: '服务态度太差！！！问了几个问题就用方言骂过来 以为我听不懂 G20别的地方都有复印的地方 这里要自己出去找复印店 微信公众号推送里也没有说要复印件 孔庙总体挺好的',
+        imgList: ['https://youimg1.c-ctrip.com/target/100l080000002vnk525A2.jpg'],
+        company: '游在孔庙'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G3/M00/1C/A0/Cii_LllTdRqIXRl4AAWySHDrT3gAAB35wIk7v8ABbJg999_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '雪泡儿',
+        content: '历史文化悠久，了解孔子文化思想，内涵丰富，有图片，有家庙，有文物，风景优美，历史丰富，交通便利，周边博物馆，孔子文化公园，非常有意义。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100f0f0000007g6v48E12.jpg', 'https://youimg1.c-ctrip.com/target/100e0f0000007g86lCCF2.jpg'],
+        company: '游在衢州孔庙'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G2/M00/2B/CC/Cii-T1g7iJmILXDfAAl7gR5XZFcAAE6cABV-J8ACXuZ398_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '黏黏小狐狸',
+        content: '孔庙所在位置闹市区，一片旅游玩乐的好地方，生活便利。门票10元，主要介绍展示孔子及其家族的历史文化、器物，环境挺不错的。衢州孔庙是家庙，全国重点文保单位。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100l0900000042udt02CA.jpg', 'https://youimg1.c-ctrip.com/target/100w0900000042ulfA477.jpg', 'https://youimg1.c-ctrip.com/target/100c0900000042ufvB5EA.jpg'],
+        company: '孔庙'
+      }, {
+        userImg: 'https://m.tuniucdn.com/fb2/t1/G2/M00/9B/A5/Cii-TlkFPOiIVqjFAEYBV6mPBdQAAJhNwH7OOcARgFv182_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
+        userName: '夏草',
+        content: '来衢州孔庙还是很值得去的，作为孔氏南宗家庙具有唯一性，门票仅十元，景区内配有免费电子导游和介绍影像，丰富知识，性价比高。',
+        imgList: ['https://youimg1.c-ctrip.com/target/100d0c0000006ps6lF953.jpg', 'https://youimg1.c-ctrip.com/target/100t0c0000006pu5u9B6D.jpg'],
+        company: '游在孔庙'
+      }
+    ]
+  },
+
+  loadMore: function () {
+    const loadTimes = this.data.loadTimes;
+    const perLoad = this.data.perLoad;
+    let temArr = this.data.dataList.slice((loadTimes * perLoad), (loadTimes * perLoad) + perLoad);
+    if (temArr.length <= 0) {
+      return;
     }
+
+    wx.showLoading({
+      title: '加载中',
+    });
+    setTimeout(() => {
+      let feedListArr = this.data.feedList.slice();
+      feedListArr.push(...temArr);
+      this.setData({
+        feedList: feedListArr,
+        loadTimes: loadTimes + 1
+      }, () => {
+        wx.hideLoading();
+      })
+    }, 1000);
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+    this.loadMore();
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+  // Kongkilk(){
+  //   wx.navigateTo({
+  //     url: 'pages/index3/index3',
+  //   })
+  // }
+
 })

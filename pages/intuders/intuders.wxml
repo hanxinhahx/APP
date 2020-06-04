@@ -2,7 +2,6 @@
 <view class="p1">
     <view class="back">
       <!-- <image class="img" src="https://ae01.alicdn.com/kf/H153a6ede98bc4a1d856ebd3f06e269413.jpg"></image>  -->
-      <text>123</text>
     </view>
   <view class="v1">
     <video class="video1" src="https://aweme.snssdk.com/aweme/v1/playwm/?video_id=v0200f590000bm3k5btp06vl8ualv8o0&ratio=720p&line=0"  show-center-play-btn="true" show-mute-btn="true"></video>

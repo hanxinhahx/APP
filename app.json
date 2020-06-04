@@ -11,8 +11,12 @@
     "pages/KongZi/KongZi",
     "pages/Hill/Hill",
     "pages/Park/Park",
-"pages/index3/index3",
-"pages/index4/index4"
+    "pages/index3/index3",
+    "pages/index4/index4",
+    "pages/Ticket/Ticket",
+    "pages/Playing/Playing",
+    "pages/Hotel/Hotel",
+    "pages/Eating/Eating"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

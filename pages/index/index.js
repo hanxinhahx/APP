@@ -1,6 +1,5 @@
 // pages/find/find.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -34,7 +33,7 @@ Page({
       {
         userImg: 'https://m.tuniucdn.com/filebroker/cdn/snc/e0/42/e0424052abef7fbcb73359c9279fb849_w120_h120_c1_t0_w120_h120_c1_t0.jpg',
         userName: '奥特曼打怪兽',
-        content: '浮浮化荆榛，孔庙存威仪。',
+        content: '看得出是用心维护的，十元门票也是象征性的，门票附带本迷你论语，里面有介绍孔庙的纪录片循环播放，有很多自助售卖的东西，象征性收1元全靠自律，不错。',
         imgList: ['http://5b0988e595225.cdn.sohucs.com/images/20190212/d1a814735fee4c1aa3f9fd8aeac092ec.jpeg', 'https://m.tuniucdn.com/fb2/t1/G5/M00/51/9E/Cii-s1pxQaSIFogLAAWHUQgwZU8AAC-RgG2fr4ABYdp67_w800_h0_c0_t0.jpeg'],
         company: '游在衢州'
       }, {
@@ -160,5 +159,11 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  // Kongkilk(){
+  //   wx.navigateTo({
+  //     url: 'pages/index3/index3',
+  //   })
+  // }
+
 })

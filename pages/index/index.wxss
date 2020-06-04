@@ -11,7 +11,8 @@
   left: 0;
   width: 100%;
   height: 95%;
-  background-image: url(http://img1.imgtn.bdimg.com/it/u=237408713,1584520826&fm=26&gp=0.jpg);
+  /* background-image: url(https://ae01.alicdn.com/kf/H153a6ede98bc4a1d856ebd3f06e269413.jpg); */
+  background-color:#B4A78D;
   filter: blur(10rpx); 
   z-index: 0;
 }
@@ -54,6 +55,7 @@
   position: relative;
   display: inline-block;
   margin-left: 10rpx;
+  
 }
 .findTop .scrollList .scrollItem image{
   position: absolute;
@@ -61,9 +63,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 40rpx;
+  border-radius:  6px;
 }
-
 .bar{
   width: 100%;
   height: 100rpx;
@@ -71,7 +72,7 @@
   align-items: center;
   padding-left: 30rpx;
   background: white;
-  background-color: #cd853f;
+  background-image: url("https://ae01.alicdn.com/kf/H153a6ede98bc4a1d856ebd3f06e269413.jpg")
 }
 .bar view{
   font-size: 36rpx;
@@ -172,6 +173,7 @@
 .feedList .article .tips .author{
   background-color: #f0f2f1;
   padding: 8rpx;
+  color: #B4A78D;
 }
 .feedList .article .tips .data{
   font-size: 26rpx;
@@ -184,7 +186,7 @@
 .feedList .userFeed .userInfo image{
   width: 50rpx;
   height: 50rpx;
-  border-radius: 50%;
+  border-radius: 6px;
 }
 .feedList .userFeed .userInfo view{
   margin-left: 20rpx;

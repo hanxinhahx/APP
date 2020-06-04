@@ -4,7 +4,7 @@
     <view class='bg'></view>
     <view class='btnList'>
       <view class='btnItem' wx:for="{{findBtn}}" wx:key="{{index}}">
-        <image src="{{item.icon}}"/>
+        <navigator url="/pages/index4/index4"><image src="{{item.icon}}"/></navigator>
         <text>{{item.text}}</text>
       </view>
     </view>
@@ -41,7 +41,7 @@
         </view>
       </view>
       <view class='tips'>
-        <view class='author'>值得旅行</view>
+        <navigator url="/pages/index3/index3"><view class='author'>值得旅行</view></navigator>
         <view class='data'>
           阅读量 365
         </view>
@@ -59,7 +59,7 @@
           <image wx:for="{{item.imgList}}" wx:for-item="imgItem" wx:key="{{imgItem}}" src="{{imgItem}}"/>
         </view>
         <view class='tips'>
-          <view class='author'>游侠帖</view>
+          <navigator url="pages/index2/index2"><view class='author'>游侠帖</view></navigator>
           <view class='data'>
           点赞量 365
         </view>

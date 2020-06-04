@@ -10,7 +10,9 @@
     "pages/Map/Map",
     "pages/KongZi/KongZi",
     "pages/Hill/Hill",
-    "pages/Park/Park"
+    "pages/Park/Park",
+"pages/index3/index3",
+"pages/index4/index4"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

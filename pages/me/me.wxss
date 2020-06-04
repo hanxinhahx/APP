@@ -84,12 +84,12 @@
   margin-top: 50rpx;
 }
 .welcome text{
-  font-size: 38rpx;
+  font-size: 30rpx;
   color: #cd853f;
 }
 /* pages/user/center/index.wxss */
 
-.container {
+/* .container {
   padding-top: 180rpx;
   padding-bottom: 30rpx;
 }
@@ -103,11 +103,11 @@
   height: 284rpx;
   background-color: #c7bfb0;
   z-index: 1;
-}
+} */
 
 /* 用户信息 */
 
-.user-card {
+/* .user-card {
   position: relative;
   z-index: 2;
   width: 690rpx;
@@ -163,10 +163,10 @@
 
 .contact .tel {
   border-right: 1rpx solid #e5e5e5;
-}
+} */
 
 /* 我的订单 */
-
+/* 
 .user-order {
   width: 690rpx;
   margin: 65rpx auto 32rpx auto;
@@ -194,7 +194,7 @@
 
 .user-order .content .li .txt {
   margin-top: 20rpx;
-}
+} */
 
 /* 菜单列表 */
 

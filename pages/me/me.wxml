@@ -16,31 +16,35 @@
   </view>
 
 
-  <view class='normalBar'>
+  <!-- <view class='normalBar'>
+  
     <text>
-    </text>分享<text>></text>
-  </view>
+    </text>分享
+    <navigator url="#">
+    <text>></text>
+    </navigator>
+  </view> -->
    <!-- 菜单栏 -->
   <view class="menu-list bg-white">
-    <navigator class="li">
-      <image class="item-icon" src="../../icons/icon-fav.png"></image>
+    <navigator class="li" url="/pages/index2/index2">
+      <image class="item-icon" src="../../icons/icon-fav2.png"></image>
       <text class="item-txt">我的收藏</text>
       <text class="iconfont icon-jinrujiantou"></text>
     </navigator>
-    <navigator class="li">
-      <image class="item-icon" src="../../icons/icon-info.png"></image>
+    <navigator class="li" url="/pages/index2/index2">
+      <image class="item-icon" src="../../icons/icon-info2.png"></image>
       <text class="item-txt">关于我们</text>
       <text class="iconfont icon-jinrujiantou"></text>
     </navigator>
-    <navigator class="li">
-      <image class="item-icon" src="../../icons/icon-question.png"></image>
+    <navigator class="li" url="/pages/index2/index2">
+      <image class="item-icon" src="../../icons/icon-question2.png"></image>
       <text class="item-txt">常见问题</text>
       <text class="iconfont icon-jinrujiantou"></text>
     </navigator>
   </view>
 
   <view class='welcome'>
-    <text>欢迎来到孔庙</text>
+   <navigator url="#"> <text>欢迎来到孔庙</text></navigator>
   </view>
 </view> 
   

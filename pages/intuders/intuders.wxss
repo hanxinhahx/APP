@@ -11,7 +11,7 @@
 }
 
 video{
-  
+     
      height: 200px;
      width: 150px;
      /* border: 1px solid black; */
@@ -42,9 +42,11 @@ p{
 }
 
 .back{
+    display: flex;
     height:50px ;
-    width: 350px;
+    width: 100%;
     background-image: url(https://ae01.alicdn.com/kf/H153a6ede98bc4a1d856ebd3f06e269413.jpg);
+    /* background-size: 100%;  */
 }
 
 
